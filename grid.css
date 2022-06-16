@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: hsl(0, 0%, 95%);
+  display: grid;
+  place-items: center;
+
+  min-height: 100vh;
+}
+main {
+  min-height: 50vh;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 33.33% 33.3% 33.33%;
+  grid-row: 33.33% 33.3% 33.33%;
+  grid-template-areas:
+    "a b c"
+    "a b c";
+}
+#one,
+.one {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(31, 77%, 52%);
+}
+#two,
+.two {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(184, 100%, 22%);
+}
+#three,
+.three {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(179, 100%, 13%);
+}
+h1,
+button {
+  color: hsl(0, 0%, 95%);
+  border: transparent;
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-top: 30px;
+}
+.one,
+.two,
+.three {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 95%);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+div {
+  padding: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#one {
+  grid-area: a;
+}
+#two {
+  grid-area: b;
+}
+#three {
+  grid-area: c;
+}
+button {
+  margin-top: 70px;
+}
